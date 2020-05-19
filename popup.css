@@ -1,22 +1,31 @@
 #popup {
-  position: fixed; 
-  z-index: 3000; 
+  position: fixed;
+  z-index: 3000;
   padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.8);
 }
 
 #popup .container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  max-width: 700px;
+  display: block;
+  -webkit-animation: fadein 3s; 
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s; 
+  -o-animation: fadein 3s; 
+  animation: fadein 3s;
 }
+
 #popup .container a {
   margin: auto;
   width: auto;
@@ -29,13 +38,14 @@
 }
 
 #popup .close {
-  position:absolute;
-  top: 15px;
-  right: 35px;
   color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
   transition: 0.3s;
+  font-size: 40px;
+  position: relative;
+  top: 25px;
+  left:12px;
+  float: right;
+  cursor: pointer;
 }
 
 #popup .close:hover,
@@ -45,7 +55,6 @@
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 800px){
   #popup .popup-content {
       width: 100%;
