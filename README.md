@@ -1,2 +1,4 @@
 # image_popup
-Image popup with jQuery
+View and clone CRUZ Branch... I'm working on this
+
+It is an very very simple image popup with jQuery
